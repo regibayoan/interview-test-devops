@@ -1,0 +1,14 @@
+---
+- hosts: all
+  tasks:
+    - name: Transfer index.html to remote host
+      copy:
+        src: ./index.html
+        dest: /home/ubuntu
+
+    - name: Transfer Dockerfile to remote host
+      copy:
+        src: ./Dockerfile
+        dest: /home/ubuntu
+
+        
